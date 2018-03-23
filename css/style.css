@@ -1,0 +1,49 @@
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+	margin: 0;
+	border: 0;
+	padding: 0;
+}
+
+#accordeon {
+	list-style: none;
+	margin: 20px;
+}
+
+img {
+	display: inline-block;
+	float: left;
+	margin: 5px;
+}
+
+#accordeon li {
+	display: block;
+	width: 700px;
+	margin-bottom: 1px;
+}
+
+.about-cat {
+ 	overflow: hidden;
+ 	display: block;
+ 	max-height: 0;
+ 	border: none;
+ 	background-color: #EEF2F0;
+ 	transition: max-height 1s ease 0s;
+}
+
+.about-cat p {
+	padding: 5px;
+}
+
+.species {
+	font: bold 20px/26px Arial, sans-serif;
+	background-color: #A9E8E6;
+	border: 2px solid blue;
+	border-radius: 3px;
+	width: 700px;
+	display: block;
+	cursor: pointer;
+	text-align: center;
+}
