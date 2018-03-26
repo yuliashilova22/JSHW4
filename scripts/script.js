@@ -1,25 +1,19 @@
-const catApp = {
-	species: null,
-	about-cat: null,
-	state: [],
+var previousElement = null;
+[...document.getElementsByClassName('species')]
+.forEach((element) => element.onclick = (() => {
+	
+	if (previousElement) {		
+		previousElement.className = 'species';
+		previousElement.nextElementSibling.style.height = '0';		
+	}
+	element.className = 'species species-current';
 
-	init() {
-		this.species = document.getElementById('species');
-		this.about-cat = document.getElementById('about-cat');
+	let wrapper = element.nextElementSibling;
+	let aboutCat = wrapper.firstElementChild;
 
-		this.handlers();
+	aboutCat.className = 'about-cat about-cat-current';
+	wrapper.style.height = aboutCat.offsetHeight  + 'px';
+	previousElement = element;
 
-	},
+}));
 
-	handlers() {
-		this.species.addEventListener('click', () => catApp.onClick(););
-
-	},
-
-	onClick() {
-		
-	},
-
-}
-
-this.init();

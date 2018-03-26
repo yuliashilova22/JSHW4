@@ -25,12 +25,25 @@ img {
 }
 
 .about-cat {
- 	overflow: hidden;
+	overflow: hidden;
  	display: block;
- 	max-height: 0;
+ 	height: auto;
  	border: none;
  	background-color: #EEF2F0;
- 	transition: max-height 1s ease 0s;
+ 
+}
+
+.about-cat-current {
+	border: 2px solid blue;
+	border-top: none;
+	border-radius: 0 0 3px 3px;
+}
+
+.wrapper {
+	height: 0;
+	transition: height .5s ease 0s;
+	overflow: hidden;
+
 }
 
 .about-cat p {
@@ -46,4 +59,9 @@ img {
 	display: block;
 	cursor: pointer;
 	text-align: center;
+}
+
+.species-current {
+	border-bottom: 1px solid blue;
+	border-radius: 3px 3px 0 0;	
 }
