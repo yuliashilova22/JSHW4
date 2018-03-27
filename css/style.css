@@ -41,7 +41,7 @@ img {
 
 .wrapper {
 	height: 0;
-	transition: height .5s ease 0s;
+	transition: height 1s ease;
 	overflow: hidden;
 
 }
